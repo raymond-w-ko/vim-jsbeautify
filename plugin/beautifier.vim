@@ -434,7 +434,7 @@ func! Beautifier(...)
       endif
   endif
 
-  silent exec line1.",".line2."j"
+  silent exec line1.",".line2."join"
   call setline(line1, lines_Beautify[0])
   call append(line1, lines_Beautify[1:])
 
